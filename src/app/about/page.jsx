@@ -1,4 +1,5 @@
 import AboutPage from '@/components/about/AboutPage'
+import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import SkillsSection from '@/components/Skills';
 import React from 'react'
@@ -13,6 +14,7 @@ export default function About() {
 		<AboutPage/>
     <SkillsSection/>
     <Experience/>
+    <Education/>
 	</div>
   )
 }
