@@ -1,4 +1,5 @@
 import AboutPage from '@/components/about/AboutPage'
+import Experience from '@/components/Experience';
 import SkillsSection from '@/components/Skills';
 import React from 'react'
 export const metadata = {
@@ -11,6 +12,7 @@ export default function About() {
 	<div className='pt-16 p-32'>
 		<AboutPage/>
     <SkillsSection/>
+    <Experience/>
 	</div>
   )
 }
