@@ -12,9 +12,16 @@ import { SiNextdotjs, SiTailwindcss, SiFirebase, SiMongodb, SiExpress } from 're
 
 // Map skill names to Tailwind text color classes
 const skillColors = {
-  HTML: 'text-red-500',
-  CSS: 'text-blue-500',
-  default: 'text-[var(--text-light)]', // Fallback to custom light color
+  HTML: 'bg-red-500',
+  CSS: 'bg-blue-500',
+  ReactJS: 'bg-cyan-500',
+  NextJS: 'bg-black',
+  'Tailwind CSS': 'bg-cyan-700',
+  Firebase: 'bg-yellow-600',
+  MongoDB: 'bg-green-600',
+  NodeJS: 'bg-teal-700',
+  ExpressJS: 'bg-black',
+//   default: 'text-[var(--text-light)]', // Fallback to custom light color
 };
 // Map skill names to their corresponding icons
 const skillIcons = {
@@ -36,7 +43,7 @@ const Skill = ({ name, x, y }) => {
 
   return (
     <motion.div
-      className={`flex items-center justify-center rounded-full font-semibold bg-dark text-light px-6 py-3 shadow-dark cursor-pointer absolute`}
+      className={`flex items-center justify-center rounded-full font-semibold ${colorClass} text-light px-6 py-3 shadow-dark cursor-pointer absolute`}
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x, y }}

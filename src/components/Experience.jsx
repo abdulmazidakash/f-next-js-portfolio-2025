@@ -5,6 +5,7 @@ import LiIcon from './LiIcon'
 
 const Details = ({position, company, companyLink, time, address, work}) =>{
 	const ref = useRef(null);
+
 	return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
 		<LiIcon reference={ref} />
 		<motion.div
@@ -12,7 +13,7 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
 		whileInView={{y:0}}
 		transition={{duration:0.5, type:'spring'}}
 		>
-			<h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink} target='_blank' className='text-primary capitalize'>@{company}</a></h3>
+			<h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink} target='_blank' className='text-teal-600 capitalize'>@{company}</a></h3>
 			<span className='capitalize font-medium text-dark/75'>
 				{time} | {address}
 			</span>
@@ -25,10 +26,11 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
 
 export default function Experience() {
 	const ref = useRef(null);
-	const {scrollYProgress} = useScroll({
-		target: ref,
-		offset: ['start end', 'center start'],
-	})
+	const { scrollYProgress } = useScroll({
+			target: ref,
+			offset: ["start end", "end start"],
+});
+
 
   return (
 	<div className='my-64'>
@@ -36,7 +38,7 @@ export default function Experience() {
 
 		<div ref={ref} className='w-[75%] mx-auto relative'>
 			{/* sidebar div  */}
-			<motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'></motion.div>
+			<motion.div style={{scaleY:scrollYProgress}} className='absolute -z-10 left-9 top-0 w-[4px] h-full bg-dark origin-top'></motion.div>
 
 			<ul className='w-full flex flex-col items-start justify-between ml-4'>
 				<Details 
