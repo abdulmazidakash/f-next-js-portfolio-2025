@@ -31,11 +31,11 @@ export default function Navbar() {
 		</nav> 
 		
 		<nav className='flex items-center justify-center flex-wrap'>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='w-16'><FaXTwitter /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='w-16'> <FaGithub /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='w-16'><FaLinkedin /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='w-16'><FaPinterest /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='w-16'><FaDribbble /></motion.a>
+			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaXTwitter /></motion.a>
+			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'> <FaGithub /></motion.a>
+			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaLinkedin /></motion.a>
+			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaPinterest /></motion.a>
+			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl'><FaDribbble /></motion.a>
 			{/* <Link href={'/' } target='_blank'><FaSun /></Link>
 			<Link href={'/' } target='_blank'><FaMoon /></Link> */}
 		</nav>

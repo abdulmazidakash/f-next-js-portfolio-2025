@@ -5,6 +5,7 @@ import AnimatedText from './AnimatedText'
 import Link from 'next/link'
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import HireMe from './HireMe'
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
 export default function Hero() {
   return (
@@ -28,8 +29,15 @@ export default function Hero() {
 				className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
 				>Resume <BsBoxArrowUpRight className='w-6 ml-1' /></Link>
 				<Link href={'mailto:abcd@gmail.com'} target='_blank' className='ml-4 font-semibold capitalize underline'>Contact</Link>
+			{/* hire me component  */}
 			</div>
 				<HireMe/>
+			</div>
+
+			{/* lightBulb image  */}
+
+			<div className='absolute right-8 bottom-8 inline-block w-24'>
+				<Image src={lightBulb} alt='bulb' className='w-full h-auto'/>
 			</div>
 
 		</div>

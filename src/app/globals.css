@@ -20,11 +20,10 @@
   
     --animate-wiggle: wiggle 4s ease-in-out infinite;
   @keyframes wiggle {
-    0,
-    0% {
+    from {
       transform: rotate(0deg);
     }
-    100% {
+    to {
       transform: rotate(360deg);
     }
   }
