@@ -1,4 +1,5 @@
 import AboutPage from '@/components/about/AboutPage'
+import SkillsSection from '@/components/Skills';
 import React from 'react'
 export const metadata = {
   title: "About | Abdul Mazid Akash",
@@ -7,8 +8,9 @@ export const metadata = {
 
 export default function About() {
   return (
-	<div>
+	<div className='pt-16 p-32'>
 		<AboutPage/>
+    <SkillsSection/>
 	</div>
   )
 }

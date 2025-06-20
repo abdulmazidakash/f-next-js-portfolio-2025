@@ -33,18 +33,19 @@ const AnimateNumbers = ({value})=>{
 
 export default function AboutPage() {
   return (
-	<div className='pt-16 p-32'>
+	<div className=''>
 		{/* reuseable component title  */}
 		<AnimatedText text={'Passion Fuels Purpose!'} className='mb-16'/>
+		{/* full about section container  */}
 		<div className='grid w-full grid-cols-8 gap-16'>
-			{/* text box  */}
+		{/* text box  */}
 			<div className='col-span-3 flex flex-col items-start justify-start'>
 				<h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
 				<p className='font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
 				<p className='font-medium mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
 				<p className='font-medium mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
 			</div>
-			{/* image box  */}
+		{/* image box  */}
 			<div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
 			<div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"></div>
 
