@@ -4,6 +4,7 @@ import profilePicture from '../../public/images/profile/developer-pic-1.png'
 import AnimatedText from './AnimatedText'
 import Link from 'next/link'
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import HireMe from './HireMe'
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
 				>Resume <BsBoxArrowUpRight className='w-6 ml-1' /></Link>
 				<Link href={'mailto:abcd@gmail.com'} target='_blank' className='ml-4 font-semibold capitalize underline'>Contact</Link>
 			</div>
-
+				<HireMe/>
 			</div>
 
 		</div>

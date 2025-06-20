@@ -17,6 +17,17 @@
 
   /* --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono); */
+  
+    --animate-wiggle: wiggle 4s ease-in-out infinite;
+  @keyframes wiggle {
+    0,
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
