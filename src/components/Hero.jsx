@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import profilePicture from '../../public/images/profile/developer-pic-1.png'
+import profilePicture from '../../public/images/profile/abdul-mazid-akash-facebook-proflie-removebg-preview.png'
 import AnimatedText from './AnimatedText'
 import Link from 'next/link'
 import { BsBoxArrowUpRight } from "react-icons/bs";
@@ -14,7 +14,7 @@ export default function Hero() {
 		<div className='flex items-center justify-between w-full'>
 			{/* hero image box  */}
 			<div className='w-1/2'>
-				<Image src={profilePicture} alt='abdul-mazid-akash' className='w-full h-full' />
+				<Image src={profilePicture} height={400} width={500} alt='abdul-mazid-akash' className='object-cover h-[420px] bg-black/20 backdrop-blur-3xl rounded-lg overflow-hidden' />
 			</div>
 			{/* text box right side  */}
 			<div className='w-1/2 flex flex-col self-center'>
@@ -36,9 +36,9 @@ export default function Hero() {
 
 			{/* lightBulb image  */}
 
-			<div className='absolute right-8 bottom-8 inline-block w-24'>
+			{/* <div className='absolute right-8 bottom-8 inline-block w-24'>
 				<Image src={lightBulb} alt='bulb' className='w-full h-auto'/>
-			</div>
+			</div> */}
 
 		</div>
 	</div>
