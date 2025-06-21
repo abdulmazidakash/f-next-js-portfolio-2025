@@ -5,6 +5,7 @@ import Logo from '../Logo'
 import { usePathname } from 'next/navigation'
 import { FaDribbble, FaGithub, FaLinkedin, FaMoon, FaPinterest, FaSun, FaXTwitter } from "react-icons/fa6";
 import {motion} from 'framer-motion'
+import useThemeSwitcher from '../hooks/useThemeSwitcher'
 
 const CustomLink = ({href, title, className=""}) =>{
 	const pathName = usePathname();
@@ -21,6 +22,7 @@ const CustomLink = ({href, title, className=""}) =>{
 	
 }
 export default function Navbar() {
+	const [mode, setMode] = useThemeSwitcher(0);
   return (
 	<div className='w-full px-32 py-8 font-medium flex items-center justify-between'>
 		<nav>
@@ -36,8 +38,15 @@ export default function Navbar() {
 			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaLinkedin /></motion.a>
 			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaPinterest /></motion.a>
 			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl'><FaDribbble /></motion.a>
-			{/* <Link href={'/' } target='_blank'><FaSun /></Link>
-			<Link href={'/' } target='_blank'><FaMoon /></Link> */}
+			<button
+			className='ml-3 flex items-center justify-center rounded-full p-1'
+			onClick={()=> setMode(mode === 'light' ? 'dark' : 'light')}
+			>
+				{
+					mode === 'dark' ?
+					<FaSun className='fill-dark text-3xl' /> : <FaMoon className='fill-dark text-3xl' />
+				}
+			</button>
 		</nav>
 
 		{/* logo component  */}

@@ -46,7 +46,7 @@ const Skill = ({ name, x, y }) => {
       className={`flex items-center justify-center rounded-full font-semibold ${colorClass} text-light px-6 py-3 shadow-dark cursor-pointer absolute`}
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
-      whileInView={{ x, y }}
+      whileInView={{ x, y, transition: {duration: 1.5} }}
       viewport={{ once: true }}
       transition={{ duration: 1.5 }}
     >
