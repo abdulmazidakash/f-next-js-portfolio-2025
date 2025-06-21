@@ -39,6 +39,8 @@ const MovingImg = ({title, img, link})=>{
 		>
 			<h2 className='capitalize text-xl font-semibold hover:underline'>{title}</h2>
 			<FramerImage 
+			sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+			priority 
 			style={{x:x, y:y}}
 			initial={{opacity:0}}
 			whileInView={{opacity:1, transition:{duration:0.2}}}

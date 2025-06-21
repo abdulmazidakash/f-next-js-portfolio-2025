@@ -18,8 +18,13 @@ const FeaturedProject = ({type, title, summary, img, link, github})=>{
 			<div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl"></div>
 			{/* image box  */}
 			<Link className='w-1/2 cursor-pointer overflow-hidden rounded-lg' href={link} target='-blank'>
-				<FramerImage 	whileHover={{scale:1.05}}
-			transition={{duration:0.2}} src={img} alt={title} className='w-full h-auto' />
+				<FramerImage
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					priority 
+					whileHover={{scale:1.05}}
+					transition={{duration:0.2}} src={img} alt={title} 
+					className='w-full h-auto' 
+				/>
 			</Link>
 			{/* text box  */}
 			<div className='w-1/2 flex flex-col items-start justify-between pl-6'>

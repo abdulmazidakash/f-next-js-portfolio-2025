@@ -9,12 +9,16 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
 export default function Hero() {
   return (
-	<div className='w-full h-full inline-block z-0 bg-light dark:bg-dark p-32 pt-0'>
+	<div className='w-full h-full inline-block z-0 bg-light  p-32 pt-0'>
 		
 		<div className='flex items-center justify-between w-full'>
 			{/* hero image box  */}
 			<div className='w-1/2'>
-				<Image src={profilePicture} height={400} width={500} alt='abdul-mazid-akash' className='object-cover h-[420px] bg-black/20 backdrop-blur-3xl rounded-lg overflow-hidden border-2 border-zinc-400 shadow-lg' />
+				<Image 
+				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+				priority 
+				src={profilePicture} height={400} width={500} alt='abdul-mazid-akash' 
+				className='object-cover h-[420px] bg-black/20 backdrop-blur-3xl rounded-lg overflow-hidden border-2 border-zinc-400 shadow-lg' />
 			</div>
 			{/* text box right side  */}
 			<div className='w-1/2 flex flex-col self-center'>
