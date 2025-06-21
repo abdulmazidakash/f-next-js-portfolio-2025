@@ -14,13 +14,13 @@ export default function Hero() {
 		<div className='flex items-center justify-between w-full'>
 			{/* hero image box  */}
 			<div className='w-1/2'>
-				<Image src={profilePicture} height={400} width={500} alt='abdul-mazid-akash' className='object-cover h-[420px] bg-black/20 backdrop-blur-3xl rounded-lg overflow-hidden' />
+				<Image src={profilePicture} height={400} width={500} alt='abdul-mazid-akash' className='object-cover h-[420px] bg-black/20 backdrop-blur-3xl rounded-lg overflow-hidden border-2 border-zinc-400 shadow-lg' />
 			</div>
 			{/* text box right side  */}
 			<div className='w-1/2 flex flex-col self-center'>
 			{/* animated component h1  */}
 				<AnimatedText text={'Turning vision into Reality with code and design'} className='!text-6xl !text-left' />
-				<p className='my-4 text-base font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis blanditiis eligendi vitae. Reiciendis ducimus libero iusto saepe illo totam!</p>
+				<p className='my-4 text-base font-semibold text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis blanditiis eligendi vitae. Reiciendis ducimus libero iusto saepe illo totam!</p>
 			{/* button use  */}
 			<div className='flex items-center self-start mt-2'>
 				<Link 

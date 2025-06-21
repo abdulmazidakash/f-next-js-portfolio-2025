@@ -41,9 +41,9 @@ export default function AboutPage() {
 		{/* text box  */}
 			<div className='col-span-3 flex flex-col items-start justify-start'>
 				<h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
-				<p className='font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
-				<p className='font-medium mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
-				<p className='font-medium mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
+				<p className='font-medium text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
+				<p className='font-medium text-justify mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
+				<p className='font-medium text-justify mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
 			</div>
 		{/* image box  */}
 			<div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">

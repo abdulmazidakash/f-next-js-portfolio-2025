@@ -17,7 +17,7 @@ const Details = ({type, time, place, info}) =>{
 			<span className='capitalize font-medium text-dark/75'>
 				{time} | {place}
 			</span>
-			<p className='font-medium w-full'>
+			<p className='w-full text-justify'>
 				{info}
 			</p>
 		</motion.div>
@@ -34,7 +34,7 @@ export default function Education() {
 
   return (
 	<div className='my-64'>
-		<h2 className='font-bold text-8xl mb-32 w-full text-center'>Experience</h2>
+		<h2 className='font-bold text-8xl mb-32 w-full text-center'>Education</h2>
 
 		<div ref={ref} className='w-[75%] mx-auto relative'>
 			{/* sidebar div  */}
