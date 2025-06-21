@@ -41,12 +41,13 @@ export default function AboutPage() {
 		{/* text box  */}
 			<div className='col-span-3 flex flex-col items-start justify-start'>
 				<h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
-				<p className='font-medium text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
-				<p className='font-medium text-justify mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
-				<p className='font-medium text-justify mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat ullam quod odio quasi cumque fugit officiis commodi. Nostrum modi unde illum harum accusantium doloremque fugiat eos nemo maxime distinctio.</p>
+				<p className='font-medium text-justify'>This is Abdul Mazid Akash. I’m a student currently studying B.Sc. in Textile Engineering at Narsingdi Textile Engineering College. My hometown is Feni, but I’m now living in Narsingdi for my studies.</p>
+				<p className='font-medium text-justify mt-4'>I recently completed a web development course from Programming Hero. Right now, I’m building web applications using JavaScript, React.js, Node.js, and MongoDB. I enjoy creating websites that are both user-friendly and responsive.</p>
+				<p className='font-medium text-justify mt-4'>I’ve worked on several projects, including ScholarshipHub, a scholarship management system. One of my main team projects is TickTo, a bus ticket booking platform. In TickTo, I worked on real-time seat selection and secure payment features. This project helped me grow my frontend and backend skills and taught me how to work well in a team.</p>
 			</div>
 		{/* image box  */}
 			<div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
+			{/* dark border box  */}
 			<div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"></div>
 
 			<Image 
