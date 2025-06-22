@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme inline  {
+@theme  {
   --color-dark: #1b1b1b;
   --color-light: #f5f5f5;
   --color-primary: #b63e96;
@@ -9,7 +9,8 @@
   --background-circularDark: repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 8px, #1b1b1b 100px);
 
   
-    --animate-wiggle: wiggle 4s ease-in-out infinite;
+  
+  --animate-wiggle: wiggle 4s ease-in-out infinite;
   @keyframes wiggle {
     from {
       transform: rotate(0deg);
@@ -18,16 +19,18 @@
       transform: rotate(360deg);
     }
   }
+
+
 }
 
 /* Light mode styles */
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
 /* Dark mode styles */
-:root.dark {
+/* :root.dark {
   --background: #0a0a0a;
   --foreground: #ededed;
-}
+} */

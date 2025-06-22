@@ -9,7 +9,7 @@ import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
 export default function Hero() {
   return (
-	<div className='w-full h-full inline-block z-0 bg-light  p-32 pt-0'>
+	<div className='w-full h-full dark:bg-dark inline-block z-0 bg-light  p-32 pt-0'>
 		
 		<div className='flex items-center justify-between w-full'>
 			{/* hero image box  */}
