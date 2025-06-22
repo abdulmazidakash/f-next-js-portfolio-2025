@@ -49,7 +49,7 @@ export default function Navbar() {
 		setIsOpen(!isOpen);
 	}
   return (
-	<div className='w-full px-32 py-8 font-medium flex items-center justify-between relative'>
+	<div className='w-10/12 mx-auto py-8 font-medium flex items-center justify-between relative'>
 
 		{/* hamburger menu  */}
 		<button className='flex-col justify-center items-center lg:hidden flex' onClick={handleClick}>
@@ -90,7 +90,7 @@ export default function Navbar() {
 		isOpen?
 
 		<motion.div 
-		initial={{scale:0, opacity:0, x:"10%", y:"-4%"}}
+		initial={{scale:0, opacity:0, x:"10%", y:"8%"}}
 		animate={{scale:1, opacity:1}}
 
 		className='min-w-[70vw] flex flex-col  justify-between  items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 rounded-lg backdrop-blur-md py-32'>
