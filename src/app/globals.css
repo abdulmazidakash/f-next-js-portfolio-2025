@@ -5,8 +5,13 @@
   --color-light: #f5f5f5;
   --color-primary: #b63e96;
   --color-primaryDark: #58e6d9;
+  
   --background-circularLight: repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px);
+  --background-circularLightMd: repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 60px);
+  --background-circularLightLg: repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 80px);
   --background-circularDark: repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 8px, #1b1b1b 100px);
+  --background-circularDarkMd: repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 8px, #1b1b1b 60px);
+  --background-circularDarkLg: repeating-radial-gradient(rgba(255,255,255,0.5) 2px, #1b1b1b 8px, #1b1b1b 80px);
 
   
   

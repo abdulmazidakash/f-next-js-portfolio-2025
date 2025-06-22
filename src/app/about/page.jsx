@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function About() {
   return (
-	<div className='pt-16 p-32'>
+	<div className='pt-16 w-10/12 mx-auto'>
 		<AboutPage/>
     <SkillsSection/>
     <Experience/>
