@@ -58,7 +58,7 @@ const Skill = ({ name, x, y }) => {
 
 export default function SkillsSection() {
   return (
-    <div className="w-10/12 mx-auto mt-12 bg-light dark:bg-dark text-dark dark:text-light">
+    <div className="w-10/12 mx-auto my-32 bg-light dark:bg-dark text-dark dark:text-light">
       <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center">
         Skills
       </h1>
