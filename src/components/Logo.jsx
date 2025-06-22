@@ -15,7 +15,7 @@ export default function Logo() {
 				transition: {duration:1, repeat:Infinity}
 			}}
 			>
-			CB
+			
 		</MotionLink>
 	</div>
   )

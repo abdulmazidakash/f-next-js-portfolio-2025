@@ -8,7 +8,7 @@ import HireMe from './HireMe'
 
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-light  flex flex-col justify-center mt-4">
+    <div className="py-20 bg-light  flex flex-col justify-center mt-4">
       
       <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-12">
         
