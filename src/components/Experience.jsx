@@ -13,7 +13,7 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
 		whileInView={{y:0}}
 		transition={{duration:0.5, type:'spring'}}
 		>
-			<h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink} target='_blank' className='text-teal-600 capitalize'>@{company}</a></h3>
+			<h3 className='capitalize font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl'>{position}&nbsp;<a href={companyLink} target='_blank' className='text-teal-600 capitalize'>@{company}</a></h3>
 			<span className='capitalize font-medium text-dark/75'>
 				{time} | {address}
 			</span>

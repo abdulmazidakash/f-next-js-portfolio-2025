@@ -13,7 +13,7 @@ const Details = ({type, time, place, info}) =>{
 		whileInView={{y:0}}
 		transition={{duration:0.5, type:'spring'}}
 		>
-			<h3 className='capitalize font-bold text-2xl'>{type}</h3>
+		<h3 className="capitalize font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl">{type}</h3>
 			<span className='capitalize font-medium text-dark/75'>
 				{time} | {place}
 			</span>
@@ -34,11 +34,24 @@ export default function Education() {
 
   return (
 	<div className='my-64'>
-		<h2 className='font-bold text-8xl mb-32 w-full text-center'>Education</h2>
+		<h2 className='w-full font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center'>Education</h2>
 
-		<div ref={ref} className='w-[75%] mx-auto relative'>
+		<div ref={ref} className='w-10/12 mx-auto relative'>
 			{/* sidebar div  */}
-			<motion.div style={{scaleY:scrollYProgress}} className='absolute -z-10 left-9 top-0 w-[4px] h-full bg-dark origin-top'></motion.div>
+			{/* <motion.div style={{scaleY:scrollYProgress}} className='absolute -z-10 left-9 top-0 w-[4px] h-full bg-dark origin-top'></motion.div> */}
+			{/* sidebar div  */}
+			<motion.div 
+				style={{ scaleY: scrollYProgress }} 
+				className="
+					absolute -z-10 
+					left-9 sm:left-4 md:left-7 lg:left-7 
+					top-0 
+					w-[2px] sm:w-[3px] md:w-[3px] lg:w-[4px] 
+					h-full 
+					bg-dark 
+					origin-top
+				">
+			</motion.div>
 
 			<ul className='w-full flex flex-col items-start justify-between ml-4'>
 				<Details 
