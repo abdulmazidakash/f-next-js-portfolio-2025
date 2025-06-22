@@ -21,8 +21,8 @@ const skillColors = {
   MongoDB: 'bg-green-600',
   NodeJS: 'bg-teal-700',
   ExpressJS: 'bg-black',
-//   default: 'text-[var(--text-light)]', // Fallback to custom light color
 };
+
 // Map skill names to their corresponding icons
 const skillIcons = {
   HTML: FaHtml5,
@@ -38,19 +38,19 @@ const skillIcons = {
 };
 
 const Skill = ({ name, x, y }) => {
-  const Icon = skillIcons[name]; // Get the icon component for the skill
-  const colorClass = skillColors[name] || skillColors.default;
+  const Icon = skillIcons[name];
+  const colorClass = skillColors[name] || 'bg-gray-500';
 
   return (
     <motion.div
-      className={`flex items-center justify-center rounded-full font-semibold ${colorClass} text-light px-6 py-3 shadow-dark cursor-pointer absolute`}
+      className={`flex items-center justify-center rounded-full font-semibold ${colorClass} text-light px-2 sm:px-3 md:px-4 lg:px-6 py-1 sm:py-1.5 md:py-2 lg:py-3 shadow-dark cursor-pointer absolute text-xs sm:text-sm md:text-base lg:text-lg`}
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
-      whileInView={{ x, y, transition: {duration: 1.5} }}
+      whileInView={{ x, y, transition: { duration: 1.5 } }}
       viewport={{ once: true }}
       transition={{ duration: 1.5 }}
     >
-      {Icon && <Icon className="mr-2 text-2xl" />} {/* Render icon if it exists */}
+      {Icon && <Icon className="mr-1 sm:mr-2 text-sm sm:text-lg md:text-xl lg:text-2xl" />}
       {name}
     </motion.div>
   );
@@ -58,28 +58,30 @@ const Skill = ({ name, x, y }) => {
 
 export default function SkillsSection() {
   return (
-    <div>
-      <h1 className="font-bold text-8xl mt-64 w-full text-center">Skills</h1>
+    <div className="w-10/12 mx-auto mt-12 bg-light dark:bg-dark text-dark dark:text-light">
+      <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center">
+        Skills
+      </h1>
       <div
-        className="w-full h-screen relative flex items-center justify-center rounded-full"
+        className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-screen relative flex items-center justify-center rounded-full overflow-hidden"
         style={{ background: 'var(--background-circularLight)' }}
       >
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer"
+          className="flex items-center justify-center rounded-full bg-dark text-light px-4 sm:px-6 md:px-8 lg:px-12 py-2 sm:py-3 md:py-4 lg:py-8 font-semibold shadow-dark cursor-pointer text-sm sm:text-base md:text-lg lg:text-xl"
           whileHover={{ scale: 1.05 }}
         >
           Web
         </motion.div>
-        <Skill name="HTML" x="-25vw" y="-2vw" />
-        <Skill name="CSS" x="-5vw" y="-10vw" />
-        <Skill name="JavaScript" x="20vw" y="6vw" />
-        <Skill name="ReactJS" x="0vw" y="12vw" />
-        <Skill name="NextJS" x="-20vw" y="-15vw" />
-        <Skill name="Tailwind CSS" x="15vw" y="-12vw" />
-        <Skill name="Firebase" x="32vw" y="-5vw" />
-        <Skill name="MongoDB" x="0vw" y="-20vw" />
-        <Skill name="NodeJS" x="-25vw" y="18vw" />
-        <Skill name="ExpressJS" x="18vw" y="18vw" />
+        <Skill name="HTML" x="-20vw" y="-5vh" />
+        <Skill name="CSS" x="0vw" y="-20vh" />
+        <Skill name="JavaScript" x="20vw" y="5vh" />
+        <Skill name="ReactJS" x="0vw" y="15vh" />
+        <Skill name="NextJS" x="-15vw" y="-25vh" />
+        <Skill name="Tailwind CSS" x="15vw" y="-10vh" />
+        <Skill name="Firebase" x="0vw" y="30vh" />
+        <Skill name="MongoDB" x="0vw" y="-40vh" />
+        <Skill name="NodeJS" x="-20vw" y="20vh" />
+        <Skill name="ExpressJS" x="20vw" y="20vh" />
       </div>
     </div>
   );
