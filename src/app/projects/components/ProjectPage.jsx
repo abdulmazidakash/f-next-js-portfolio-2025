@@ -31,6 +31,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       >
         <FramerImage
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          width={800}  // Replace with the actual width of the image
+          height={800} // Replace with the actual height of the image
           priority
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -43,7 +45,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       <div className="w-full flex flex-col items-start justify-between mt-4 lg:mt-0 lg:pl-6">
         <span className="text-teal-700 font-medium text-base sm:text-lg md:text-xl">{type}</span>
         <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h2 className="my-2 w-full text-left text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold">
             {title}
           </h2>
         </Link>
@@ -57,7 +59,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="flex items-center bg-dark text-light p-2 px-4 sm:p-2.5 sm:px-5 md:p-3 md:px-6 rounded-lg text-sm sm:text-base md:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark ml-4"
+            className="flex items-center bg-dark text-light p-2 sm:p-2.5 sm:px-2 md:p-2 md:px-2 rounded-lg text-sm sm:text-base md:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark ml-4"
           >
             Visit Project <BsBoxArrowUpRight className="w-4 sm:w-5 md:w-6 ml-1" />
           </Link>
@@ -75,6 +77,8 @@ const Project = ({ title, type, img, link, github }) => {
       {/* Image box */}
       <Link className="w-full cursor-pointer overflow-hidden rounded-lg" href={link} target="_blank">
         <FramerImage
+        width={800} // Replace with the actual width of the image
+          height={800} // Replace with the actual height of the image
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           src={img}
@@ -97,7 +101,7 @@ const Project = ({ title, type, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="flex items-center bg-dark text-light p-2 px-4 sm:p-2.5 sm:px-5 md:p-3 md:px-6 rounded-lg text-sm sm:text-base md:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+            className="flex items-center bg-dark text-light p-2 sm:p-2.5 sm:px-2 md:p-2 md:px-2   rounded-lg text-sm sm:text-base md:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
           >
             Visit <BsBoxArrowUpRight className="w-4 sm:w-5 md:w-6 ml-1" />
           </Link>
@@ -112,7 +116,7 @@ export default function ProjectPage() {
     <div className="w-10/12 mx-auto my-8 sm:my-12 md:my-16 flex flex-col items-center justify-center">
       <div className="w-full">
         <AnimatedText
-          text={'Imagination Trump Knowledge!'}
+          text={'Creativity Outshines Expertise!'}
           className="mb-8 sm:mb-10 md:mb-12 lg:mb-16 !text-2xl sm:!text-3xl md:!text-4xl lg:!text-6xl xl:!text-8xl text-center"
         />
       </div>
@@ -127,61 +131,67 @@ export default function ProjectPage() {
       >
         {/* Card section 01 */}
         <div className="col-span-1 lg:col-span-12">
+          {/* project card 1 */}
           <FeaturedProject
             title={'ScholarshipHub'}
-            img={project1}
-            summary={`ScholarshipHub is a comprehensive Scholarship Management System designed to assist students in searching for suitable universities and scholarships. It also facilitates the application process, allowing students to apply for scholarships directly through the platform. The system supports three types of users: default users, administrators, and moderators. Upon registration, a user is assigned the 'user' role by default. Administrators have the capability to change user roles as needed.`}
+            img={`https://i.ibb.co/dJP8Cq2q/scholarship-hub.jpg`}
+            summary={`ScholarshipHub is a comprehensive Scholarship Management System designed to assist students in searching for suitable universities and scholarships. It also facilitates the application process, allowing students to apply for scholarships directly through the platform...`}
             link={'https://scholarship-hub-akash.netlify.app/'}
             github={'https://github.com/abdulmazidakash/c-assignment-12-client-side'}
             type={'Featured Project'}
           />
         </div>
         <div className="col-span-1 lg:col-span-6">
+          {/* project card 2 */}
           <Project
-            title={'ScholarshipHub'}
-            img={project1}
-            link={'https://scholarship-hub-akash.netlify.app/'}
-            github={'https://github.com/abdulmazidakash/c-assignment-12-client-side'}
-            type={'Featured Project'}
+            title={'GlobalVisaHub'}
+            img={`https://i.ibb.co/bjKBgWFw/global-visa.jpg`}
+            link={'https://assignment-10-global-visa-hub-akash.netlify.app/'}
+            github={'https://github.com/abdulmazidakash/c-assignment-10-visa-navigating-client'}
+            type={'Project'}
           />
         </div>
         <div className="col-span-1 lg:col-span-6">
+          {/* project card 3 */}
           <Project
-            title={'ScholarshipHub'}
-            img={project1}
-            link={'https://scholarship-hub-akash.netlify.app/'}
-            github={'https://github.com/abdulmazidakash/c-assignment-12-client-side'}
-            type={'Featured Project'}
+            title={'Artifact Atlas'}
+            img={`https://i.ibb.co/FbckQ2qB/atlas.jpg`}
+            link={'https://assignment-11-artifact-atlas.netlify.app/'}
+            github={'https://github.com/abdulmazidakash/c-assignment-11'}
+            type={'Project'}
           />
         </div>
 
         {/* Card section 02 */}
         <div className="col-span-1 lg:col-span-12">
+          {/* project card 4 */}
           <FeaturedProject
-            title={'ScholarshipHub'}
-            img={project1}
-            summary={`ScholarshipHub is a comprehensive Scholarship Management System designed to assist students in searching for suitable universities and scholarships. It also facilitates the application process, allowing students to apply for scholarships directly through the platform. The system supports three types of users: default users, administrators, and moderators. Upon registration, a user is assigned the 'user' role by default. Administrators have the capability to change user roles as needed.`}
-            link={'https://scholarship-hub-akash.netlify.app/'}
-            github={'https://github.com/abdulmazidakash/c-assignment-12-client-side'}
+            title={'PIC-SEEK-AI'}
+            img={`https://i.ibb.co/YFrTqxLd/pic-seek-ai.jpg`}
+            summary={`Pick-Seek is an advanced AI-powered tool that can generate images, analyze images, and provide contextual replies and comments based on specific image content. It leverages cutting-edge AI models to process visual data efficiently and interact seamlessly with users.`}
+            link={'https://pic-seek-akash.netlify.app/'}
+            github={'https://github.com/abdulmazidakash/f-pic-seek-template'}
             type={'Featured Project'}
           />
         </div>
         <div className="col-span-1 lg:col-span-6">
+          {/* project card 5 */}
           <Project
-            title={'ScholarshipHub'}
-            img={project1}
-            link={'https://scholarship-hub-akash.netlify.app/'}
-            github={'https://github.com/abdulmazidakash/c-assignment-12-client-side'}
-            type={'Featured Project'}
+            title={'Job Portal'}
+            img={`https://i.ibb.co/hx9vBVD4/job-portal.jpg`}
+            link={'https://three-job-portal.netlify.app/'}
+            github={'https://three-job-portal.netlify.app/'}
+            type={'Project'}
           />
         </div>
         <div className="col-span-1 lg:col-span-6">
+          {/* project card 6 */}
           <Project
-            title={'ScholarshipHub'}
-            img={project1}
-            link={'https://scholarship-hub-akash.netlify.app/'}
-            github={'https://github.com/abdulmazidakash/c-assignment-12-client-side'}
-            type={'Featured Project'}
+            title={'SoloSphere'}
+            img={`https://i.ibb.co/TxcQCtNc/solophere.jpg`}
+            link={'https://milestone-11-conceptual-solosphere.netlify.app/'}
+            github={'https://github.com/abdulmazidakash e-conceptual-session-b10-solophere-template-client'}
+            type={'Project'}
           />
         </div>
       </div>

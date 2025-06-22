@@ -90,11 +90,11 @@ export default function Navbar() {
 		isOpen?
 
 		<motion.div 
-		initial={{scale:0, opacity:0, x:"10%", y:"8%"}}
+		initial={{scale:0, opacity:0, x:"0%", y:"8%"}}
 		animate={{scale:1, opacity:1}}
 
-		className='min-w-[70vw] flex flex-col  justify-between  items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 rounded-lg backdrop-blur-md py-32'>
-			{/* left side page routing link  */}
+		className='min-w-[70vw] flex flex-col  justify-between  items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 rounded-lg backdrop-blur-md py-28'>
+		{/* left side page routing link  */}
 		<nav className='flex items-center flex-col justify-center'>
 			<CustomMobileLink href={'/'} title={"Home"} className='' toggle={handleClick}/>
 			<CustomMobileLink href={'/about'} title={"About"} className='' toggle={handleClick}/>

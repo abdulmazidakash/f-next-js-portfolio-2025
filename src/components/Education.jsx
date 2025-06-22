@@ -17,7 +17,7 @@ const Details = ({type, time, place, info}) =>{
 			<span className='capitalize font-medium text-dark/75'>
 				{time} | {place}
 			</span>
-			<p className='w-full text-justify'>
+			<p className='w-full text-justify mt-2 font-semibold'>
 				{info}
 			</p>
 		</motion.div>
@@ -55,22 +55,16 @@ export default function Education() {
 
 			<ul className='w-full flex flex-col items-start justify-between ml-4'>
 				<Details 
-				type={'Bachelor Of Science In Computer Science'} 
-				time={'2016-2020'}
-				place={'Massachusetts Institute Of Technology (MIT)'} 
-				info={'Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.'}
+				type={'Bachelor Of Science In Textile Engineering'} 
+				time={'2021 - Present'}
+				place={'Narsingdi Textile Engineering College (NTEC)'} 
+				info={'Major coursework includes Textile Fibers, Yarn Manufacturing, Fabric Structure & Design, Textile Testing and Quality Control, and Textile Production Management.'}
 				/>
 				<Details 
-				type={'Bachelor Of Science In Computer Science'} 
-				time={'2016-2020'}
-				place={'Massachusetts Institute Of Technology (MIT)'} 
-				info={'Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.'}
-				/>
-				<Details 
-				type={'Bachelor Of Science In Computer Science'} 
-				time={'2016-2020'}
-				place={'Massachusetts Institute Of Technology (MIT)'} 
-				info={'Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.'}
+				type={'Diploma In Textile Engineering'} 
+				time={'2016 - 2020'}
+				place={'Chattogram Textile Institute (CTI)'} 
+				info={'Key subjects covered Textile Raw Materials, Spinning Technology, Weaving Technology, Dyeing & Finishing, and Industrial Training in Textile Mills.'}
 				/>
 				
  | 

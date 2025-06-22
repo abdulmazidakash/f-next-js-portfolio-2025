@@ -10,7 +10,7 @@ const AnimateNumbers = ({value})=>{
     const ref = useRef(null);
 
     const motionValue = useMotionValue(0);
-    const springValue = useSpring(motionValue, {duration: 3000});
+    const springValue = useSpring(motionValue, {duration: 5000});
     const isInView = useInView(ref, {once: true});
 
     useEffect(()=>{
@@ -34,7 +34,7 @@ export default function AboutPage() {
   return (
     <div className=''>
         {/* reuseable component title  */}
-        <AnimatedText text={'Passion Fuels Purpose!'} 
+        <AnimatedText text={'Crafting Creative Futures!'} 
         className="mb-16 !text-4xl sm:!text-5xl lg:!text-6xl xl:!text-8xl"
         />
         {/* --- CHANGE 1: Main Grid Container ---
@@ -82,17 +82,17 @@ export default function AboutPage() {
             <div className='col-span-1 lg:col-span-2 order-3 flex flex-row lg:flex-col items-center lg:items-end justify-between'>
                 <div className='flex flex-col items-center lg:items-end justify-center'>
                     {/* Responsive Font Size */}
-                    <span className='inline-block text-xl md:text-6xl lg:text-7xl font-bold'><AnimateNumbers value={50} />+</span>
+                    <span className='inline-block text-xl md:text-6xl lg:text-7xl font-bold'><AnimateNumbers value={'.'} />+</span>
                     <h1 className='text-base md:text-lg lg:text-xl font-semibold capitalize text-dark/75 text-center lg:text-right'>Satisfied clients</h1>
                 </div>
                 <div className='flex flex-col items-center lg:items-end justify-center'>
                      {/* Responsive Font Size */}
-                    <span className='inline-block text-xl md:text-6xl lg:text-7xl font-bold'><AnimateNumbers value={40} />+</span>
+                    <span className='inline-block text-xl md:text-6xl lg:text-7xl font-bold'><AnimateNumbers value={3} />+</span>
                     <h1 className='text-base md:text-lg lg:text-xl font-semibold capitalize text-dark/75 text-center lg:text-right'>Project Completed</h1>
                 </div>
                 <div className='flex flex-col items-center lg:items-end justify-center'>
                      {/* Responsive Font Size */}
-                    <span className='inline-block text-xl md:text-6xl lg:text-7xl font-bold'><AnimateNumbers value={2} />+</span>
+                    <span className='inline-block text-xl md:text-6xl lg:text-7xl font-bold'><AnimateNumbers value={1} />+</span>
                     <h1 className='text-base md:text-lg lg:text-xl font-semibold capitalize text-dark/75 text-center lg:text-right'>Years of experience</h1>
                 </div>
             </div>

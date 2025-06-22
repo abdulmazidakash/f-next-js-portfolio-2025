@@ -107,7 +107,7 @@ export default function ArticlesPage() {
   return (
     <div className="w-10/12 mx-auto flex flex-col items-center justify-center overflow-hidden px-2 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8">
       <AnimatedText
-        text={'Words can change the worlds'}
+        text={'Ideas Shape New Realities!'}
         className="mb-4 sm:mb-6 md:mb-8 lg:mb-12 !text-xl sm:!text-2xl md:!text-3xl lg:!text-5xl xl:!text-7xl text-center"
       />
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 w-full">

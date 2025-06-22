@@ -54,45 +54,26 @@ export default function Experience() {
 
 			<ul className='w-full flex flex-col items-start justify-between ml-4'>
 				<Details 
-				position={'Software Engineer'} 
-				company={'Google'}
+				position={'Endgame'} 
+				company={'Programming Hero'}
 				companyLink={'www.google.com'} 
-				time={'2022-Present'} 
-				address={'Mountain View, CA'} 
+				time={'2024-Present'} 
+				address={'Dhaka, Bangladesh'} 
 				work={`Worked on a team responsible for developing new features for Google's 
 						search engine, including improving the accuracy and relevance of search results and 
 						developing new tools for data analysis and visualization.`} 
 				/>
 				<Details 
-				position={'Software Engineer'} 
-				company={'Google'}
+				position={'Endgame'} 
+				company={'Programming Hero'}
 				companyLink={'www.google.com'} 
-				time={'2022-Present'} 
-				address={'Mountain View, CA'} 
+				time={'2024-Present'} 
+				address={'Dhaka, Bangladesh'} 
 				work={`Worked on a team responsible for developing new features for Google's 
 						search engine, including improving the accuracy and relevance of search results and 
 						developing new tools for data analysis and visualization.`} 
 				/>
-				<Details 
-				position={'Software Engineer'} 
-				company={'Google'}
-				companyLink={'www.google.com'} 
-				time={'2022-Present'} 
-				address={'Mountain View, CA'} 
-				work={`Worked on a team responsible for developing new features for Google's 
-						search engine, including improving the accuracy and relevance of search results and 
-						developing new tools for data analysis and visualization.`} 
-				/>
-				<Details 
-				position={'Software Engineer'} 
-				company={'Google'}
-				companyLink={'www.google.com'} 
-				time={'2022-Present'} 
-				address={'Mountain View, CA'} 
-				work={`Worked on a team responsible for developing new features for Google's 
-						search engine, including improving the accuracy and relevance of search results and 
-						developing new tools for data analysis and visualization.`} 
-				/>
+				
 			</ul>
 		</div>
 	</div>
