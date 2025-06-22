@@ -61,10 +61,10 @@ const Article = ({ img, title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       viewport={{ once: true }}
-      className="relative w-full p-2 sm:p-3 md:p-4 my-2 sm:my-3 md:my-4 rounded-xl flex items-center justify-between bg-light text-dark border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4"
+      className="relative w-full p-2 sm:p-3 md:p-4 my-2 sm:my-3 md:my-4 rounded-xl flex md:flex-row sm:flex-col items-center justify-between bg-light text-dark border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4"
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-teal-600 font-semibold text-sm sm:text-base md:text-lg pl-2 sm:pl-3 md:pl-4">
+      <span className="text-teal-600 font-semibold text-sm sm:text-base md:text-lg pl-2 sm:pl-0 md:pl-4 sm:self-start">
         {date}
       </span>
     </motion.li>
@@ -171,18 +171,7 @@ export default function ArticlesPage() {
           link={'/'}
           img={article5}
         />
-        <Article
-          title={'Build A Custom Pagination Component In Reactjs From Scratch'}
-          date={'June 22, 2025'}
-          link={'/'}
-          img={article5}
-        />
-        <Article
-          title={'Build A Custom Pagination Component In Reactjs From Scratch'}
-          date={'June 22, 2025'}
-          link={'/'}
-          img={article5}
-        />
+        
       </ul>
     </div>
   );

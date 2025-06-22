@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectsPage from './components/ProjectPage';
+import TransitionEffect from '@/components/TransitionEffect';
 
 export const metadata = {
   title: "Projects | Abdul Mazid Akash",
@@ -9,6 +10,7 @@ export const metadata = {
 export default function Projects() {
   return (
 	<div>
+    <TransitionEffect/>
 		<ProjectsPage/>
 	</div>
   )

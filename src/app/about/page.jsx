@@ -2,6 +2,7 @@ import AboutPage from '@/components/about/AboutPage'
 import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import SkillsSection from '@/components/Skills';
+import TransitionEffect from '@/components/TransitionEffect';
 import React from 'react'
 
 export const metadata = {
@@ -12,6 +13,7 @@ export const metadata = {
 export default function About() {
   return (
 	<div className='pt-16 w-10/12 mx-auto'>
+    <TransitionEffect/>
 		<AboutPage/>
     <SkillsSection/>
     <Experience/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import ArticlesPage from './components/ArticlePage';
+import TransitionEffect from '@/components/TransitionEffect';
 
 export const metadata = {
   title: "Articles | Abdul Mazid Akash",
@@ -9,6 +10,7 @@ export const metadata = {
 export default function Article() {
   return (
 	<div>
+    <TransitionEffect/>
 		<ArticlesPage/>
 	</div>
   )
