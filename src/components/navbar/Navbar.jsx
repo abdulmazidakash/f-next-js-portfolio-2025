@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from '../Logo'
 import { usePathname, useRouter } from 'next/navigation'
-import { FaDribbble, FaGithub, FaLinkedin, FaMoon, FaPinterest, FaSun, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaGithub, FaLinkedin, FaMoon, FaSun, FaXTwitter, FaFacebook } from "react-icons/fa6";
 import {motion} from 'framer-motion'
 import useThemeSwitcher from '../hooks/useThemeSwitcher'
 
@@ -69,11 +69,11 @@ export default function Navbar() {
 		
 		{/* right side social icon link  */}
 		<nav className='flex items-center justify-center flex-wrap'>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaXTwitter /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'> <FaGithub /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaLinkedin /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaPinterest /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl'><FaDribbble /></motion.a>
+			<motion.a href={'https://www.linkedin.com/in/abdulmazidakash/'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaLinkedin /></motion.a>
+			<motion.a href={'https://github.com/abdulmazidakash'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'> <FaGithub /></motion.a>
+			<motion.a href={'https://x.com/abdulmazidakash'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaXTwitter /></motion.a>
+			<motion.a href={'https://www.facebook.com/akashabdulmazid/'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaFacebook /></motion.a>
+			<motion.a href={'https://www.instagram.com/abdulmazidakash/'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl'><FaInstagram /></motion.a>
 			<button
 			className='ml-3 flex items-center justify-center rounded-full p-1'
 			onClick={()=> setMode(mode === 'light' ? 'dark' : 'light')}
@@ -104,11 +104,11 @@ export default function Navbar() {
 		
 		{/* right side social icon link  */}
 		<nav className='flex items-center justify-center flex-wrap mt-2'>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaXTwitter className='text-light' /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'> <FaGithub className='text-light' /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaLinkedin className='text-light' /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaPinterest className='text-light' /></motion.a>
-			<motion.a href={'https://x.com'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaDribbble className='text-light' /></motion.a>
+			<motion.a href={'https://www.linkedin.com/in/abdulmazidakash/'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaLinkedin className='text-light' /></motion.a>
+			<motion.a href={'https://github.com/abdulmazidakash'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'> <FaGithub className='text-light' /></motion.a>
+			<motion.a href={'https://x.com/abdulmazidakash'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaXTwitter className='text-light' /></motion.a>
+			<motion.a href={'https://www.facebook.com/akashabdulmazid/'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaFacebook className='text-light' /></motion.a>
+			<motion.a href={'https://www.instagram.com/abdulmazidakash/'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3 sm:mx-1'><FaInstagram className='text-light' /></motion.a>
 			<button
 			className='ml-3 flex items-center justify-center rounded-full p-1'
 			onClick={()=> setMode(mode === 'light' ? 'dark' : 'light')}

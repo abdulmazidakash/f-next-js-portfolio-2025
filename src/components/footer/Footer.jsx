@@ -7,15 +7,15 @@ export default function Footer() {
       <div className="py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         
         <span>
-          {new Date().getFullYear()} &copy; All Rights Reserved.
+          {new Date().getFullYear()} &copy; All Rights Reserved By Abdul Mazid Akash.
         </span>
 
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           Build With <span className="text-primary text-2xl px-1">&#9825;</span> by&nbsp;
           <Link href="/" className="underline underline-offset-2" target="_blank">
             Abdul Mazid Akash
           </Link>
-        </div>
+        </div> */}
 
         <Link href="/" className="underline underline-offset-2" target="_blank">
           Say Hello

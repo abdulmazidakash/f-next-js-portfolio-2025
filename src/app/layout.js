@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import TransitionEffect from "@/components/TransitionEffect";
-import { AnimatePresence } from "framer-motion";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,9 +27,7 @@ export default function RootLayout({ children }) {
       >
         <TransitionEffect/>
         <Navbar/>
-        <AnimatePresence mode="wait">
           {children}
-        </AnimatePresence>
         <Footer/>
       </body>
     </html>

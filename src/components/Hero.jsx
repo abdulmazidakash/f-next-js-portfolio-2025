@@ -5,10 +5,11 @@ import AnimatedText from './AnimatedText'
 import Link from 'next/link'
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import HireMe from './HireMe'
+import { FaFileDownload } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <div className="py-20 bg-light  flex flex-col justify-center mt-4">
+    <div className="py-16 bg-light  flex flex-col justify-center mt-4">
       
       <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-12">
         
@@ -26,18 +27,19 @@ export default function Hero() {
         </div>
 
         {/* text box */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-left lg:text-left">
           <AnimatedText 
-            text="Turning vision into Reality with code and design" 
-            className="!text-3xl sm:!text-4xl md:!text-5xl lg:!text-6xl"
+            text="Shaping Dreams into Reality with Creative Code" 
+            className="!text-3xl sm:!text-2xl md:!text-4xl lg:!text-5xl text-center lg:text-left"
           />
-          <p className="my-4 text-base font-medium max-w-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis blanditiis eligendi vitae. Reiciendis ducimus libero iusto saepe illo totam!
+          <p className="my-4 font-medium text-base sm:text-lg md:text-xl lg:text-xl">
+            Abdul Mazid Akash | Passionate MERN Stack Developer
           </p>
+
           
           <div className="flex items-center justify-center gap-4 mt-6">
             <Link 
-              href="/public/dummy.pdf" 
+              href="https://drive.google.com/file/d/1VUGjoZrcdWlxoiavj8zjraIQE8y_usT-/view?usp=sharing" 
               target="_blank"
               className="flex items-center bg-dark text-light p-3 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-dark transition-colors"
             >
@@ -45,11 +47,12 @@ export default function Hero() {
             </Link>
             
             <Link 
-              href="mailto:abcd@gmail.com" 
-              target="_blank" 
-              className="font-semibold capitalize underline"
+              href="https://drive.google.com/file/d/1VUGjoZrcdWlxoiavj8zjraIQE8y_usT-/view?usp=sharing" 
+              target="_blank"
+              className="flex items-center bg-dark text-light p-3 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-dark transition-colors"
+              download={true}
             >
-              Contact
+              Download <FaFileDownload className="w-6 ml-2" />
             </Link>
           </div>
 

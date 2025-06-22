@@ -8,8 +8,8 @@ export default function HireMe() {
     <div
       className="
         fixed 
-        right-4 -top-2 
-        md:right-4 md:-top-2 
+        right-4 -top-0 
+        md:right-4 md:-top-0 
         lg:right-24 lg:top-auto lg:bottom-4
         z-50
         flex items-center justify-center overflow-hidden
@@ -31,8 +31,9 @@ export default function HireMe() {
             bg-dark text-light shadow-md border border-solid border-dark 
              rounded-full font-semibold 
             hover:bg-light hover:text-dark 
-			lg:w-20 lg:h-20
-			md:w-12 md:h-12 text-md md:text-[10px] sm:text-[10px]
+              lg:w-20 lg:h-20
+              md:w-12 md:h-12
+              text-sm sm:text-sm md:text-md lg:text-md
           "
         >
           Hire Me
