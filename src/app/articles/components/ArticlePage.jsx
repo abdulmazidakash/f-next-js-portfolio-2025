@@ -42,6 +42,8 @@ const MovingImg = ({ title, img, link }) => {
       </h2>
       <FramerImage
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        width={500}
+        height={500}
         priority
         style={{ x, y }}
         initial={{ opacity: 0 }}
@@ -83,6 +85,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         className="w-full inline-block cursor-pointer overflow-hidden rounded-lg"
       >
         <FramerImage
+            width={500}
+        height={500}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           src={img}
@@ -119,7 +123,7 @@ export default function ArticlesPage() {
           }
           time={'9 min read'}
           link={'/'}
-          img={article1}
+          img={`https://i.ibb.co/hxns7HXc/photo-1591267990532-e5bdb1b0ceb8.jpg`}
         />
         {/* Featured Article 2 */}
         <FeaturedArticle
@@ -129,7 +133,7 @@ export default function ArticlesPage() {
           }
           time={'9 min read'}
           link={'/'}
-          img={article2}
+          img={`https://i.ibb.co/Tykfz0T/premium-photo-1726754457459-d2dfa2e3a434.jpg`}
         />
       </ul>
       <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-full text-center my-6 sm:my-8 md:my-10 lg:my-16 mt-12 sm:mt-16 md:mt-20 lg:mt-32">

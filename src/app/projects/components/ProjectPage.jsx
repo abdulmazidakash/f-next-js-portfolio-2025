@@ -69,7 +69,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, github, summary }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-4 sm:p-6 md:p-8 relative">
       {/* Dark border box */}
@@ -94,6 +94,9 @@ const Project = ({ title, type, img, link, github }) => {
             {title}
           </h2>
         </Link>
+        <p className="my-2 font-medium text-dark text-justify text-sm sm:text-base md:text-lg">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center w-full justify-between">
           <Link href={github} target="_blank">
             <FaGithub className="text-2xl sm:text-3xl md:text-4xl" />
@@ -146,6 +149,7 @@ export default function ProjectPage() {
           <Project
             title={'GlobalVisaHub'}
             img={`https://i.ibb.co/bjKBgWFw/global-visa.jpg`}
+            summary={`A user-friendly Global Visa Hub platform that simplifies the process of exploring, applying, and managing visa applications.`}
             link={'https://assignment-10-global-visa-hub-akash.netlify.app/'}
             github={'https://github.com/abdulmazidakash/c-assignment-10-visa-navigating-client'}
             type={'Project'}
@@ -156,6 +160,7 @@ export default function ProjectPage() {
           <Project
             title={'Artifact Atlas'}
             img={`https://i.ibb.co/FbckQ2qB/atlas.jpg`}
+            summary={`Artifact Atlas is an interactive web platform for exploring and managing historical artifacts.`}
             link={'https://assignment-11-artifact-atlas.netlify.app/'}
             github={'https://github.com/abdulmazidakash/c-assignment-11'}
             type={'Project'}
@@ -179,8 +184,9 @@ export default function ProjectPage() {
           <Project
             title={'Job Portal'}
             img={`https://i.ibb.co/hx9vBVD4/job-portal.jpg`}
+            summary={`Credibly empower innovative initiatives after process-centric products. Phosfluorescently syndicate flexible opportunities through ubiquitous meta-services. Seamlessly recaptiualize adaptive e-markets with business.`}
             link={'https://three-job-portal.netlify.app/'}
-            github={'https://three-job-portal.netlify.app/'}
+            github={'https://github.com/abdulmazidakash/third-job-portal'}
             type={'Project'}
           />
         </div>
@@ -189,6 +195,7 @@ export default function ProjectPage() {
           <Project
             title={'SoloSphere'}
             img={`https://i.ibb.co/TxcQCtNc/solophere.jpg`}
+            summary={`SoloSphere appears to be a freelancing or job bidding platform where users can browse, filter, and search for jobs based on categories, deadlines, and titles. Each job card displays essential information like the job title, category, deadline, budget range, description snippet, and number of bids.`}
             link={'https://milestone-11-conceptual-solosphere.netlify.app/'}
             github={'https://github.com/abdulmazidakash e-conceptual-session-b10-solophere-template-client'}
             type={'Project'}
