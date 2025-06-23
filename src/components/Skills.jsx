@@ -21,6 +21,7 @@ const skillColors = {
   MongoDB: 'bg-green-600',
   NodeJS: 'bg-teal-700',
   ExpressJS: 'bg-black',
+   JavaScript: 'bg-yellow-500',
 };
 
 // Map skill names to their corresponding icons
@@ -58,7 +59,7 @@ const Skill = ({ name, x, y }) => {
 
 export default function SkillsSection() {
   return (
-    <div className="w-10/12 mx-auto my-32 bg-light dark:bg-dark text-dark dark:text-light">
+    <div className="w-10/12 mx-auto my-32 bg-light  text-dark ">
       <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center">
         Skills
       </h1>
@@ -72,16 +73,16 @@ export default function SkillsSection() {
         >
           Web
         </motion.div>
-        <Skill name="HTML" x="-20vw" y="-5vh" />
+        <Skill name="HTML" x="-20vw" y="-0vh" />
         <Skill name="CSS" x="0vw" y="-20vh" />
-        <Skill name="JavaScript" x="20vw" y="5vh" />
-        <Skill name="ReactJS" x="0vw" y="15vh" />
+        <Skill name="JavaScript" x="20vw" y="0vh" />
+        <Skill name="ReactJS" x="0vw" y="20vh" />
         <Skill name="NextJS" x="-15vw" y="-25vh" />
-        <Skill name="Tailwind CSS" x="15vw" y="-10vh" />
-        <Skill name="Firebase" x="0vw" y="30vh" />
-        <Skill name="MongoDB" x="0vw" y="-40vh" />
+        <Skill name="Tailwind CSS" x="0vw" y="-40vh" />
+        <Skill name="Firebase" x="0vw" y="38vh" />
+        <Skill name="MongoDB" x="15vw" y="-25vh" />
         <Skill name="NodeJS" x="-20vw" y="20vh" />
-        <Skill name="ExpressJS" x="20vw" y="20vh" />
+        <Skill name="ExpressJS" x="20vw" y="22vh" />
       </div>
     </div>
   );

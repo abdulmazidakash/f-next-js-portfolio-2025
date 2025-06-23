@@ -7,6 +7,7 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
 	const ref = useRef(null);
 
 	return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+		
 		<LiIcon reference={ref} />
 		<motion.div
 		initial={{y:50}}
@@ -17,7 +18,7 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
 			<span className='capitalize font-medium text-dark/75'>
 				{time} | {address}
 			</span>
-			<p className='font-medium w-full text-justify'>
+			<p className='w-full text-justify mt-2 font-semibold'>
 				{work}
 			</p>
 		</motion.div>

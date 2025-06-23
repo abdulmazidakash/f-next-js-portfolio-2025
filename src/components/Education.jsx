@@ -35,6 +35,7 @@ export default function Education() {
   return (
 	<div className='my-32'>
 		<h2 className='w-full font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center'>Education</h2>
+		
 
 		<div ref={ref} className='w-10/12 mx-auto relative'>
 			{/* sidebar div  */}
