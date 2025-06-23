@@ -16,8 +16,8 @@ export default function About() {
     <TransitionEffect/>
 		<AboutPage/>
     <SkillsSection/>
-    <Experience/>
     <Education/>
+    <Experience/>
 	</div>
   )
 }

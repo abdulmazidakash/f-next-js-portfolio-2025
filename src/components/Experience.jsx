@@ -6,7 +6,7 @@ import LiIcon from './LiIcon'
 const Details = ({position, company, companyLink, time, address, work}) =>{
 	const ref = useRef(null);
 
-	return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+	return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[100%] sm:w-[100%] md:w-[60%] mx-auto flex flex-col items-center justify-between'>
 		
 		<LiIcon reference={ref} />
 		<motion.div
@@ -43,7 +43,7 @@ export default function Experience() {
 				style={{ scaleY: scrollYProgress }} 
 				className="
 					absolute -z-10 
-					left-9 sm:left-4 md:left-7 lg:left-7 
+					-left-4 sm:left-0 md:left-7 lg:left-7 
 					top-0 
 					w-[2px] sm:w-[3px] md:w-[3px] lg:w-[4px] 
 					h-full 
@@ -74,7 +74,6 @@ export default function Experience() {
 						search engine, including improving the accuracy and relevance of search results and 
 						developing new tools for data analysis and visualization.`} 
 				/>
-				
 			</ul>
 		</div>
 	</div>
