@@ -1,6 +1,10 @@
 import React from 'react'
 import ArticlesPage from './components/ArticlePage';
 import TransitionEffect from '@/components/TransitionEffect';
+import InterQandA from './components/InterQandA';
+import HtmlQandA from './components/HtmlQandA';
+import CssQandA from './components/CssQandA';
+import JsQandA from './components/JsQandA';
 
 export const metadata = {
   title: "Articles | Abdul Mazid Akash",
@@ -12,6 +16,10 @@ export default function Article() {
 	<div>
     <TransitionEffect/>
 		<ArticlesPage/>
+    <InterQandA/>
+    <HtmlQandA/>
+    <CssQandA/>
+    <JsQandA/>
 	</div>
   )
 }
