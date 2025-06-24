@@ -50,6 +50,7 @@ A modern, blazing-fast personal portfolio website built with Next.js 15, React 1
 | Next.js       | 15.3.4   |
 | React         | ^19.0.0  |
 | Tailwind CSS  | ^4       |
+| shadcn/ui   | ^-       |
 | Framer Motion | ^12.18.1 |
 | React Icons   | ^5.5.0   |
 | ESLint        | ^9       |
