@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function Article() {
   return (
-	<div>
+	<div className='text-dark'>
     <TransitionEffect/>
 		<ArticlesPage/>
     <InterQandA/>

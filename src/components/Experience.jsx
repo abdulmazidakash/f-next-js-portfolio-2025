@@ -14,11 +14,11 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
 		whileInView={{y:0}}
 		transition={{duration:0.5, type:'spring'}}
 		>
-			<h3 className='capitalize font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl mb-2'>{position}&nbsp;<a href={companyLink} target='_blank' className='text-teal-600 capitalize'>@{company}</a></h3>
+			<h3 className='capitalize font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl mb-2 text-dark'>{position}&nbsp;<a href={companyLink} target='_blank' className='text-teal-600 capitalize'>@{company}</a></h3>
 			<span className='capitalize font-medium text-dark/75'>
 				{time} | {address}
 			</span>
-			<p className='w-full text-justify mt-2 font-semibold'>
+			<p className='w-full text-justify mt-2 font-semibold text-dark'>
 				{work}
 			</p>
 		</motion.div>
@@ -35,7 +35,7 @@ export default function Experience() {
 
   return (
 	<div className='my-32'>
-		<h2 className='w-full font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center'>Experience</h2>
+		<h2 className='w-full font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center text-dark text-dark'>Experience</h2>
 
 		<div ref={ref} className='w-10/12 mx-auto relative'>
 			{/* sidebar div  */}

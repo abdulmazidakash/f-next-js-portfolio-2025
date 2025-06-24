@@ -45,7 +45,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       <div className="w-full flex flex-col items-start justify-between mt-4 lg:mt-0 lg:pl-6">
         <span className="text-teal-700 font-medium text-base sm:text-lg md:text-xl">{type}</span>
         <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold">
+          <h2 className="my-2 w-full text-left text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-dark">
             {title}
           </h2>
         </Link>
@@ -54,7 +54,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         </p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank">
-            <FaGithub className="text-2xl sm:text-3xl md:text-4xl" />
+            <FaGithub className="text-2xl sm:text-3xl md:text-4xl text-dark" />
           </Link>
           <Link
             href={link}
@@ -90,7 +90,7 @@ const Project = ({ title, type, img, link, github, summary }) => {
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-teal-700 font-medium text-base sm:text-lg md:text-xl">{type}</span>
         <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-xl sm:text-2xl md:text-3xl font-bold">
+          <h2 className="my-2 w-full text-left text-xl sm:text-2xl md:text-3xl font-bold text-dark">
             {title}
           </h2>
         </Link>
@@ -99,7 +99,7 @@ const Project = ({ title, type, img, link, github, summary }) => {
         </p>
         <div className="mt-2 flex items-center w-full justify-between">
           <Link href={github} target="_blank">
-            <FaGithub className="text-2xl sm:text-3xl md:text-4xl" />
+            <FaGithub className="text-2xl sm:text-3xl md:text-4xl text-dark" />
           </Link>
           <Link
             href={link}

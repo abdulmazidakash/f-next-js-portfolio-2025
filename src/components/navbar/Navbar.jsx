@@ -12,9 +12,9 @@ const CustomLink = ({href, title, className=""}) =>{
 	console.log('pathname here--->', pathName);
 	
 	return (
-			<Link href={href} className={`${className}  font-semibold relative group`}>
+			<Link href={href} className={`${className} text-dark  font-semibold relative group`}>
 				{title}
-				<span className={`h-[1px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${pathName === href ? 'w-full' : 'w-0' }`}
+				<span className={`h-[1px] inline-block w-0 bg-dark  absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${pathName === href ? 'w-full' : 'w-0' }`}
 				>&nbsp;
 				</span>
 			</Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
 		</nav> 
 		
 		{/* right side social icon link  */}
-		<nav className='flex items-center justify-center flex-wrap'>
+		<nav className='flex items-center justify-center flex-wrap text-dark'>
 			<motion.a href={'https://www.linkedin.com/in/abdulmazidakash/'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaLinkedin /></motion.a>
 			<motion.a href={'https://github.com/abdulmazidakash'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'> <FaGithub /></motion.a>
 			<motion.a href={'https://x.com/abdulmazidakash'} target={'_blank'} whileHover={{y:-2}} whileTap={{scale: 0.9}} className='text-3xl mr-3'><FaXTwitter /></motion.a>
