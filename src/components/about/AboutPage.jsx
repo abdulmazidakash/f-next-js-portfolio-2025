@@ -60,15 +60,15 @@ export default function AboutPage() {
           - Order: Set to 'order-1' on mobile (to appear first) and 'lg:order-2' on large screens.
           - Large screens: Spans 3 columns ('lg:col-span-3').
         */}
-            <div className="col-span-1 lg:col-span-3 order-1 lg:order-2 relative h-max rounded-4xl border border-2 border-solid border-dark border-b-12 border-r-12 bg-light p-4 lg:p-8">
+            <div className="col-span-1 lg:col-span-3 order-1 lg:order-2 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 lg:p-8">
                 {/* dark border box */}
-                {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"></div> */}
+                <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"></div>
                 <Image 
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority 
                     src={profilePic} 
                     alt="about-pic" 
-                    className="w-full h-auto rounded-3xl"
+                    className="w-full h-auto rounded-2xl"
                 />
             </div>
 

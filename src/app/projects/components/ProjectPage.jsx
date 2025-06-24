@@ -22,7 +22,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       "
     >
       {/* Dark border box */}
-      <div className="absolute top-0 -right-2 sm:-right-3 -z-10 w-[101%] h-[102%] sm:h-[103%] rounded-[2rem] rounded-br-3xl" />
+      <div className="absolute top-0 -right-2 sm:-right-3 -z-10 w-[101%] h-[102%] sm:h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
       {/* Image box */}
       <Link
         className="w-full cursor-pointer overflow-hidden rounded-lg"

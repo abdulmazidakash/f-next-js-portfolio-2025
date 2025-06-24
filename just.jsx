@@ -3,79 +3,62 @@
   /* custom color  */
   /* --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono); */
+import React from 'react'
 
-  'use client'
-  import React, { useRef } from 'react'
-  import {motion, useScroll} from 'framer-motion'
-  import LiIcon from './LiIcon'
-  
-  const Details = ({type, time, place, info}) =>{
-    const ref = useRef(null);
-  
-    return <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
-      <LiIcon reference={ref} />
-      <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, type:'spring'}}
-      >
-      <h3 className="capitalize font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl mb-2">{type}</h3>
-        <span className='capitalize font-medium text-dark/75'>
-          {time} | {place}
-        </span>
-        <p className='w-full text-justify mt-2 font-semibold'>
-          {info}
-        </p>
-      </motion.div>
-    </li>
-  }
-  
-  export default function Education() {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start end", "center start"],
-  });
-  
-  
-    return (
-    <div className='my-32'>
-      <h2 className='w-full font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl mb-4 sm:mb-6 md:mb-8 lg:mb-16 text-center'>Education</h2>
-      
-  
-      <div ref={ref} className='w-10/12 mx-auto relative'>
-        {/* sidebar div  */}
-        {/* <motion.div style={{scaleY:scrollYProgress}} className='absolute -z-10 left-9 top-0 w-[4px] h-full bg-dark origin-top'></motion.div> */}
-        {/* sidebar div  */}
-        <motion.div 
-          style={{ scaleY: scrollYProgress }} 
-          className="
-            absolute -z-10 
-            left-9 sm:left-4 md:left-7 lg:left-7 
-            top-0 
-            w-[2px] sm:w-[3px] md:w-[3px] lg:w-[4px] 
-            h-full 
-            bg-dark 
-            origin-top
-          ">
-        </motion.div>
-  
-        <ul className='w-full flex flex-col items-start justify-between ml-4'>
-          <Details 
-          type={'Bachelor Of Science In Textile Engineering'} 
-          time={'2021 - Present'}
-          place={'Narsingdi Textile Engineering College (NTEC)'} 
-          info={'Major coursework includes Textile Fibers, Yarn Manufacturing, Fabric Structure & Design, Textile Testing and Quality Control, and Textile Production Management.'}
-          />
-          <Details 
-          type={'Diploma In Textile Engineering'} 
-          time={'2016 - 2020'}
-          place={'Chattogram Textile Institute (CTI)'} 
-          info={'Key subjects covered Textile Raw Materials, Spinning Technology, Weaving Technology, Dyeing & Finishing, and Industrial Training in Textile Mills.'}
-          />
-        </ul>
-      </div>
-    </div>
-    )
-  }
-  
+export default function InterQandA() {
+  return (
+  <div className='w-10/12 mx-auto my-8'>
+    <h2 className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-full text-center my-6 sm:my-8 md:my-10 lg:my-16'>Interpersonal Question & Answer</h2>
+    <div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" defaultChecked />
+  <div className="collapse-title font-semibold">1. Tell me about yourself.</div>
+  <div className="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">2. What are your greatest strengths?</div>
+  <div className="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">3. What are your greatest weaknesses?</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">4. Something you feel ashamed of? </div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">5. Why are you leaving your last position?</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">6. The “Silent Treatment”</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">7. Why should I hire you?</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">8. Why do you want to work here?</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">9. Where do      you see yourself in five years?</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+<div className="collapse collapse-arrow bg-light border border-solid border-dark border-r-2 sm:border-r-3 md:border-r-4 border-b-2 sm:border-b-3 md:border-b-4">
+  <input type="radio" name="my-accordion-2" />
+  <div className="collapse-title font-semibold">10. Describe your ideal job, location, and company.</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+  </div>
+  )
+}
