@@ -9,10 +9,11 @@ export default function LiIcon({reference}) {
 		})
 return (
 <div>
-	<figure className='absolute  -left-13 sm:left-10 md:left-0 lg:left-0 stroke-dark'>
+	<figure className='absolute text-dark  -left-13 sm:left-10 md:left-0 lg:left-0 stroke-dark'>
 			<svg 
 			className='
 			-rotate-90
+		
 			md:w-[60px] md:h-[60px] 
 			sm:w-[40px] sm:h-[40px]
 			'  width={'75'} height={'75'} viewBox='0 0 100 100'>
